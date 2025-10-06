@@ -46,4 +46,4 @@ The `Layoffs.sql` file contains queries focused on cleaning a dataset named `wor
 
 ## Portfolio Note
 
-This project is included in my personal portfolio to showcase my **data cleaning and SQL problem-solving abilities**. The goal is to highlight my approach to handling messy datasets and ensuring data reliability for further analysis.
+This project is included in my personal portfolio to showcase my **data cleaning and SQL problem-solving abilities**. The goal is to highlight my approach to handling messy datasets and ensuring data reliability for further analysis.# sql-data-cleaning
