@@ -1,49 +1,73 @@
-# Layoffs Data Cleaning (SQL)
+# Layoffs Data Cleaning and Exploratory Data Analysis (SQL)
 
-This project is part of my **portfolio** and demonstrates my skills in **SQL-based data cleaning and preprocessing**. The script works on a dataset of global layoffs and shows the step-by-step process of preparing raw data for analysis.
-
----
-
-## Overview
-
-The `Layoffs.sql` file contains queries focused on cleaning a dataset named `world_layoffs.layoffs`. The script illustrates key data wrangling techniques, including:
-
-* Viewing and exploring the raw dataset
-* Identifying duplicate records
-* Removing duplicates using CTEs and `ROW_NUMBER()`
-* Preparing a clean version of the data for analysis
+This project is part of my **data portfolio** and highlights how I use **SQL** to clean and explore real-world data. The dataset focuses on **global company layoffs**, showing the process from messy data to meaningful insights.
 
 ---
 
-## Requirements
+## Project Overview
 
-* A SQL environment (MySQL, PostgreSQL, or similar)
-* A database named `world_layoffs` containing a table `layoffs` with raw layoff records
+The project is divided into two main parts:
+
+### 1. Data Cleaning
+
+I worked on improving data quality using SQL techniques such as:
+
+* Identifying and removing duplicates with **CTEs** and the `ROW_NUMBER()` function
+* Checking for **null and inconsistent values**
+* Standardizing company names and country entries
+* Creating a clean version of the dataset called `layoffs_staging`
+
+### 2. Exploratory Data Analysis (EDA)
+
+After cleaning, I explored the dataset to answer key questions:
+
+* Which companies had the **highest total layoffs**?
+* Which **industries** and **countries** were most affected?
+* What is the **trend of layoffs over time** (monthly and yearly)?
+* How do **funds raised** relate to the **extent of layoffs**?
+
+I used SQL functions like:
+
+* `GROUP BY` and `SUM()` for aggregations
+* `DENSE_RANK()` to rank companies by layoffs per year
+* `WITH` clauses (CTEs) for organized and readable analysis
+* Date functions to track layoffs **over months and years**
+
+---
+
+## Sample Insights
+
+* **Top companies** like Google, Amazon and Meta had the largest layoff totals.
+* **Consumer and Retail** industries were among the hardest hit.
+* The **peak layoff period** occurred between 2022–2023.
+* Companies that raised more funds didn’t always have fewer layoffs.
+
+---
+
+## Tools and Skills
+
+* **SQL (MySQL)**
+* Data cleaning and transformation
+* Exploratory data analysis (EDA)
+* Use of window functions and CTEs
+* Analytical storytelling with SQL
 
 ---
 
 ## How to Use
 
-1. Import the raw layoffs dataset into your SQL database under `world_layoffs.layoffs`.
-2. Run the queries in `Layoffs.sql` step by step:
-
-   * Explore the raw data
-   * Detect duplicates
-   * Apply cleaning queries
-3. Confirm that the cleaned table contains unique, consistent records ready for analysis.
+1. Import the layoffs dataset into your SQL environment.
+2. Run `Layoffs_Data_Cleaning.sql` to clean and prepare the data.
+3. Run `Layoffs_EDA.sql` to explore patterns and trends.
 
 ---
 
-## Skills Demonstrated
+## About This Project
 
-* Data exploration with SQL
-* Use of **CTEs** (Common Table Expressions)
-* Duplicate detection and removal
-* Data quality checks
-* SQL best practices for portfolio projects
+This project demonstrates my ability to:
 
----
+* Work with messy real-world data
+* Apply structured SQL logic to clean and explore it
+* Present insights that tell a clear story about workforce trends
 
-## Portfolio Note
-
-This project is included in my personal portfolio to showcase my **data cleaning and SQL problem-solving abilities**. The goal is to highlight my approach to handling messy datasets and ensuring data reliability for further analysis.# sql-data-cleaning
+This project is part of my ongoing portfolio to demonstrate my ability to **work with real data**, **ask the right questions**, and **find insights using SQL**
